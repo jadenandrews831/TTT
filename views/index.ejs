@@ -267,7 +267,7 @@
     function endGame(draw, currentClass)
     {
         WINNING_MESSAGE.style.display = 'flex'
-        // This line is bugged. If it is a draw, but the current class places a winning move, it will still be called a draw.
+        // This line is bugged. If it is a draw, but the current class places a winning move, it will still be called a draw. (fixed)
         winTxt.innerHTML = draw ? 'It\'s a draw!!!' : `${currentClass.toUpperCase()}'s Win!!!`
     }
 
